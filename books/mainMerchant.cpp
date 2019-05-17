@@ -3,11 +3,11 @@
 void mainMerchant::run()
 {
     cout << 1 << ":"
-         << "ç™»é™†" << endl;
+         << "µÇÂ½" << endl;
     cout << 2 << ":"
-         << "ä¹¦åº“" << endl;
+         << "Êé¿â" << endl;
     cout << 3 << ":"
-         << "ä½™é¢" << endl;
+         << "Óà¶î" << endl;
     int operate;
     cin >> operate;
     switch (operate)
@@ -17,13 +17,13 @@ void mainMerchant::run()
         break;
     case 2:
         if (merchant.username == "")
-            cout << "è¯·ç™»é™†" << endl;
+            cout << "ÇëµÇÂ½" << endl;
         else
         {
             Book book;
             for (int i = 0; i < merchantbookstore.bookNum; i++)
             {
-                merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
             }
             merchantbookstore.username = merchant.username;
             merchantbookstore.readFile();

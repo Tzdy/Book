@@ -8,7 +8,7 @@ using namespace std;
 bool BookStore::delBook(Book book){
         for(int i = 0 ; i < bookNum; i ++ )
         {
-                if(bookBox[i] == book)
+                if(bookBox[i].operator== (book))
                 {
                         for(int j = i ; j < 49; j++ ){
                                 bookBox[j] = bookBox[j+1];
@@ -26,7 +26,7 @@ bool BookStore::showBooksList(){
                 cout << "----------------------------------------------------------------------------" << endl;
                 for(int i = 0 ; i  < bookNum ; i ++)
                 {
-                        cout << i+1 <<"ä¹¦åï¼š" <<bookBox[i].bookName << " " <<  "ä»·æ ¼ï¼š" <<bookBox[i].price << endl;
+                        cout << i+1 <<"ÊéÃû£º" <<bookBox[i].bookName << " " <<  "¼Û¸ñ£º" <<bookBox[i].price << endl;
                 }
                 cout << "----------------------------------------------------------------------------" << endl;
                 return true;

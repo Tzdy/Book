@@ -12,8 +12,8 @@ bool MyLogin::sign()
         cin >> repassword;
         if (user.password != repassword)
         {
-                cout << "å‰åŽè¾“å…¥ä¸ç¬¦" << endl;
-                cout << "æ˜¯å¦ç»§ç»­æ³¨å†Œï¼Ÿï¼ˆy/nï¼‰";
+                cout << "Ç°ºóÊäÈë²»·û" << endl;
+                cout << "ÊÇ·ñ¼ÌÐø×¢²á£¿£¨y/n£©";
                 char judg = getchar();
                 char judge = getchar();
                 if (judge == 'y')

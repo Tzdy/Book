@@ -7,17 +7,17 @@ void MerBox::pushMer(MerchantBookStore store){
 void MerBox::readAll(){  
     boxNum = 0;
     MerchantBookStore copy;
-    for(int i = 0 ; i < Merlogin.userNum ; i++){ //æ¸…é™¤ç¼“å­˜ï¼ï¼ï¼
+    for(int i = 0 ; i < Merlogin.userNum ; i++){ //Çå³ý»º´æ£¡£¡£¡
         box[i] =copy;
     }   
 
-    for(int i = 0 ; i < Merlogin.userNum ; i++){ //è¯»å…¥ç¼“å­˜ï¼ï¼ï¼
+    for(int i = 0 ; i < Merlogin.userNum ; i++){ //¶ÁÈë»º´æ£¡£¡£¡
         merchantbookstore.username = Merlogin.user[i].username;
         merchantbookstore.readFile();
         pushMer(merchantbookstore);
     }   
     MerchantBookStore del;
-    merchantbookstore = del;   //æ¸…é™¤ç¼“å­˜ï¼ï¼ï¼ï¼ï¼ï¼
+    merchantbookstore = del;   //Çå³ý»º´æ£¡£¡£¡£¡£¡£¡
 }
 
 void MerBox::display(){
@@ -33,6 +33,6 @@ MerchantBookStore MerBox::searchBox(string name){
             break;
         }
     }
-    MerchantBookStore null;   //æ²¡æ‰¾åˆ°
+    MerchantBookStore null;   //Ã»ÕÒµ½
     return null;
 }

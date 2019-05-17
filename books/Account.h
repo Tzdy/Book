@@ -8,7 +8,7 @@ using namespace std;
 class Account
 {
 private:
-                        //å†™100æµ‹è¯•
+                        //Ð´100²âÊÔ
 public:
         string username;
         double money;

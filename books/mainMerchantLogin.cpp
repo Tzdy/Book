@@ -2,15 +2,15 @@
 bool mainMerchantLogin::login(){
     Merlogin.readFile();
     if(Merlogin.login()){
-        merchantbookstore.username = Merlogin.username; //ä»“åº“å
-        merchant.username = Merlogin.username; //è´¦æˆ·
+        merchantbookstore.username = Merlogin.username; //²Ö¿âÃû
+        merchant.username = Merlogin.username; //ÕË»§
 
 
 
 
         Book book;
         for(int i = 0 ; i < merchantbookstore.bookNum ; i ++){
-            merchantbookstore.bookBox[i] = {book};  //æ¸…é™¤ç¼“å­˜ï¼
+            merchantbookstore.bookBox[i] = {book};  //Çå³ı»º´æ£¡
         }
         merchantbookstore.bookNum = 0;
         merchantbookstore.readFile();
@@ -37,24 +37,24 @@ bool mainMerchantLogin::sign(){
 }
 
 void mainMerchantLogin::sence(){
-    cout << 1 << ":" << "ç™»é™†" << endl;
-    cout << 2 << ":" << "æ³¨å†Œ" << endl;
-    cout << 3 << ":" << "è¿”å›ä¸Šä¸€é¡µ" << endl;
+    cout << 1 << ":" << "µÇÂ½" << endl;
+    cout << 2 << ":" << "×¢²á" << endl;
+    cout << 3 << ":" << "·µ»ØÉÏÒ»Ò³" << endl;
     int operate;
     cin >> operate;
     switch (operate)
     {
     case 1:
         if(login())
-            cout << "ç™»é™†æˆåŠŸ" << endl;
+            cout << "µÇÂ½³É¹¦" << endl;
         else 
-            cout << "ç™»é™†å¤±è´¥" << endl;   
+            cout << "µÇÂ½Ê§°Ü" << endl;   
         break;
     case 2:
         if(sign())
-            cout << "æ³¨å†ŒæˆåŠŸ" << endl;
+            cout << "×¢²á³É¹¦" << endl;
         else
-            cout << "æ³¨å†Œå¤±è´¥" << endl;  
+            cout << "×¢²áÊ§°Ü" << endl;  
         break;          
     default:
         break;
@@ -62,7 +62,7 @@ void mainMerchantLogin::sence(){
 }
 
 void mainMerchantLogin::returnPage(){
-    cout << "æ˜¯å¦ç»§ç»­ç•™åœ¨æ¦‚ç•Œé¢ï¼Ÿï¼ˆy/nï¼‰" << endl;
+    cout << "ÊÇ·ñ¼ÌĞøÁôÔÚ¸Å½çÃæ£¿£¨y/n£©" << endl;
         fflush(stdin);
         char judge = getchar();
         if (judge == 'y')

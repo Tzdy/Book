@@ -12,8 +12,8 @@ public:
   string username;  //signal
   bool delBook(Book book);
   bool showBooksList();
-  Book searchBook(string name); //æ³¨æ„ï¼ï¼ï¼ï¼è¿”å›å…·ä½“å¯¹è±¡ï¼Œæ²¡æœ‰å°±è¿”å›ç©ºå¯¹è±¡
-  bool showBookListDetails(Book book); //ä¹¦
+  Book searchBook(string name); //×¢Òâ£¡£¡£¡£¡·µ»Ø¾ßÌå¶ÔÏó£¬Ã»ÓĞ¾Í·µ»Ø¿Õ¶ÔÏó
+  bool showBookListDetails(Book book); //Êé
   bool pushBook(Book book);
 };
 #endif

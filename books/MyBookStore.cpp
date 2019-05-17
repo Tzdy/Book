@@ -67,7 +67,7 @@ bool MyBookStore::readFile(){
 //                 cout << "----------------------------------------------------------------------------" << endl;
 //                 for(int i = 0 ; i  < bookNum ; i ++)
 //                 {
-//                         cout << "ä¹¦åï¼š" <<bookBox[i].bookName << " " <<  "ä»·æ ¼ï¼š" <<bookBox[i].price << endl;
+//                         cout << "ÊéÃû£º" <<bookBox[i].bookName << " " <<  "¼Û¸ñ£º" <<bookBox[i].price << endl;
 //                 }
 //                 cout << "----------------------------------------------------------------------------" << endl;
 //                 return true;

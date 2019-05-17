@@ -7,13 +7,13 @@ using namespace std;
 void mainMyBookStore::showBooklist()
 {
         if (self.username == "")
-                cout << "è¯·å…ˆç™»é™†ï¼" << endl;
+                cout << "ÇëÏÈµÇÂ½£¡" << endl;
         else
         {
                 Book book;
                 for (int i = 0; i < mybookstore.bookNum; i++)
                 {
-                        mybookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                        mybookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
                 }
                 mybookstore.bookNum = 0;
                 mybookstore.username = self.username;
@@ -24,14 +24,14 @@ void mainMyBookStore::showBooklist()
                 }
                 else
                 {
-                        cout << "è´­ç‰©è½¦ä¸ºç©º" << endl;
+                        cout << "¹ºÎï³µÎª¿Õ" << endl;
                         return;
                 }
                 int operate;
                 cout << "1:"
-                     << "ç§»é™¤" << endl;
+                     << "ÒÆ³ý" << endl;
                 cout << "2:"
-                     << "ä¸‹å•" << endl;
+                     << "ÏÂµ¥" << endl;
                 cin >> operate;
                 switch (operate)
                 {
@@ -42,7 +42,7 @@ void mainMyBookStore::showBooklist()
                         buyBook();
                         break;
                 default:
-                        break; // æ²¡å†™å®Œ    è¿˜æ²¡å›žåˆ°ä¸»å¾ªçŽ¯
+                        break; // Ã»Ð´Íê    »¹Ã»»Øµ½Ö÷Ñ­»·
                 }
                 returnPage();
         }
@@ -50,36 +50,36 @@ void mainMyBookStore::showBooklist()
 
 void mainMyBookStore::delBook()
 {
-        cout << "è¯·è¾“å…¥ä½ è¦åˆ é™¤çš„ä¹¦å" << endl;
+        cout << "ÇëÊäÈëÄãÒªÉ¾³ýµÄÊéÃû" << endl;
         string name;
         cin >> name;
         Book book;
         for (int i = 0; i < mybookstore.bookNum; i++)
         {
-                mybookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                mybookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
         }
         mybookstore.bookNum = 0;
         mybookstore.username = self.username;
         mybookstore.readFile();
         if (mybookstore.delBook(mybookstore.searchBook(name)) && mybookstore.writeFile())
         {
-                cout << "åˆ é™¤æˆåŠŸ" << endl;
+                cout << "É¾³ý³É¹¦" << endl;
         }
         else
         {
-                cout << "ä½ è¾“å…¥çš„ä¸å­˜åœ¨" << endl;
+                cout << "ÄãÊäÈëµÄ²»´æÔÚ" << endl;
         }
 }
 
 void mainMyBookStore::buyBook()
 {
-        cout << "è¯·è¾“å…¥ä½ è¦è´­ä¹°çš„ä¹¦å" << endl;
+        cout << "ÇëÊäÈëÄãÒª¹ºÂòµÄÊéÃû" << endl;
         string name;
         cin >> name;
         Book book;
         for (int i = 0; i < mybookstore.bookNum; i++)
         {
-                mybookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                mybookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
         }
         mybookstore.bookNum = 0;
         mybookstore.username = self.username;
@@ -97,7 +97,7 @@ void mainMyBookStore::buyBook()
                         self.writeFile();
                         for (int i = 0; i < merchantbookstore.bookNum; i++)
                         {
-                                merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                                merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
                         }
                         merchantbookstore.username = copy.username;
                         merchant.username = copy.username;
@@ -111,19 +111,19 @@ void mainMyBookStore::buyBook()
                 }
                 else
                 {
-                        cout << "ä½ è¾“å…¥çš„ä¸å­˜åœ¨" << endl;
+                        cout << "ÄãÊäÈëµÄ²»´æÔÚ" << endl;
                 }
         }
         else
         {
-                cout << "ä½™é¢ä¸è¶³" << endl;
+                cout << "Óà¶î²»×ã" << endl;
         }
         
 }
 
 void mainMyBookStore::returnPage()
 {
-        cout << "æ˜¯å¦ç»§ç»­æŸ¥çœ‹è´­ç‰©è½¦ï¼Ÿï¼ˆy/nï¼‰" << endl;
+        cout << "ÊÇ·ñ¼ÌÐø²é¿´¹ºÎï³µ£¿£¨y/n£©" << endl;
         char jude = getchar();
         char judge = getchar();
         if (judge == 'y')

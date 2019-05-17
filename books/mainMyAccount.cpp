@@ -18,26 +18,26 @@ bool mainMyAccount::charge(double x)
 void mainMyAccount::sence()
 {
     if (self.username == "")
-        cout << "è¯·ç™»é™†ï¼" << endl;
+        cout << "ÇëµÇÂ½£¡" << endl;
     else
     {
         cout << 1 << ":"
-             << "å……å€¼" << endl;
+             << "³äÖµ" << endl;
         cout << 2 << ":"
-             << "ä½™é¢" << endl;
+             << "Óà¶î" << endl;
         int operate;
         cin >> operate;
         switch (operate)
         {
         case 1:
-            cout << "è¯·è¾“å…¥ä½ æƒ³å……å€¼çš„é‡‘é¢ã€‚" << endl;
+            cout << "ÇëÊäÈëÄãÏë³äÖµµÄ½ð¶î¡£" << endl;
             double money;
             cin >> money;
             if (charge(money))
-                cout << "å……å€¼æˆåŠŸï¼" << endl;
+                cout << "³äÖµ³É¹¦£¡" << endl;
             else
             {
-                cout << "å……å€¼å¤±è´¥ï¼" << endl;
+                cout << "³äÖµÊ§°Ü£¡" << endl;
             }
             returnPage();
             break;
@@ -52,7 +52,7 @@ void mainMyAccount::sence()
 
 void mainMyAccount::returnPage()
 {
-    cout << "æ˜¯å¦ç»§ç»­å……å€¼ï¼Ÿï¼ˆy/nï¼‰" << endl;
+    cout << "ÊÇ·ñ¼ÌÐø³äÖµ£¿£¨y/n£©" << endl;
     fflush(stdin);
     char jude = getchar();
     char judge = getchar();
@@ -69,5 +69,5 @@ void mainMyAccount::returnPage()
 void mainMyAccount::test()
 {
     self.readFile();
-    cout << "æ‚¨å½“å‰çš„ä½™é¢ä¸ºï¼š" << self.money << endl;
+    cout << "Äúµ±Ç°µÄÓà¶îÎª£º" << self.money << endl;
 }

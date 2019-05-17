@@ -18,14 +18,14 @@ bool mainBuy::displayList()
 
 bool mainBuy::displayDetails()
 {
-    cout << "è¯·è¾“å…¥ä¹¦å" << endl;
+    cout << "ÇëÊäÈëÊéÃû" << endl;
     string name;
     cin >> name;
     int sit;
     Book book;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
     }
     merchantbookstore.bookNum = 0;
     for (int i = 0; i < merbox.boxNum; i++)
@@ -38,7 +38,7 @@ bool mainBuy::displayDetails()
     if (merchantbookstore.showBooksList())
     {
         int operate;
-        cout << "è¯·è¾“å…¥åºå·" << endl;
+        cout << "ÇëÊäÈëÐòºÅ" << endl;
         cin >> operate;
         if (merchantbookstore.bookBox[operate - 1].bookName != "")
         {
@@ -47,13 +47,13 @@ bool mainBuy::displayDetails()
         }
         else
         {
-            cout << "è¾“å…¥æœ‰è¯¯" << endl;
+            cout << "ÊäÈëÓÐÎó" << endl;
             return false;
         }
     }
     else
     {
-        cout << "sorryæ‚¨è¾“å…¥çš„ä¸å­˜åœ¨ï¼" << endl;
+        cout << "sorryÄúÊäÈëµÄ²»´æÔÚ£¡" << endl;
         return false;
     }
 }
@@ -63,10 +63,10 @@ bool mainBuy::addMystore()
     Book book;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
     }
-    merchantbookstore.bookNum = 0; //ä¸æ‰§è¡Œreadæ“ä½œå°±è¦æ‰‹åŠ¨æ¸…0
-    cout << "è¯·è¾“å…¥ä¹¦å" << endl;
+    merchantbookstore.bookNum = 0; //²»Ö´ÐÐread²Ù×÷¾ÍÒªÊÖ¶¯Çå0
+    cout << "ÇëÊäÈëÊéÃû" << endl;
     string name;
     int operate;
     cin >> name;
@@ -79,13 +79,13 @@ bool mainBuy::addMystore()
     }
     if (merchantbookstore.showBooksList())
     {
-        cout << "è¯·è¾“å…¥è¦æ·»åŠ çš„åºå·" << endl; //è¿™é‡Œçš„åºå·æ˜¯ä»Ž1å¼€å§‹æ˜¾ç¤ºçš„ï¼
+        cout << "ÇëÊäÈëÒªÌí¼ÓµÄÐòºÅ" << endl; //ÕâÀïµÄÐòºÅÊÇ´Ó1¿ªÊ¼ÏÔÊ¾µÄ£¡
         cin >> operate;
         if (merchantbookstore.bookBox[operate - 1].bookName != "")
         {
             for (int i = 0; i < mybookstore.bookNum; i++)
             {
-                mybookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                mybookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
             }
             mybookstore.username = self.username;
             mybookstore.readFile();
@@ -95,27 +95,27 @@ bool mainBuy::addMystore()
         }
         else
         {
-            cout << "ä½ è¾“å…¥çš„ä¸å­˜åœ¨ï¼" << endl;
+            cout << "ÄãÊäÈëµÄ²»´æÔÚ£¡" << endl;
             return false;
         }
     }
     else
     {
-        cout << "æ²¡æœ‰æŸ¥åˆ°ï¼" << endl;
+        cout << "Ã»ÓÐ²éµ½£¡" << endl;
         return false;
     }
 }
 
 bool mainBuy::buyBook()
 {
-    cout << "è¯·è¾“å…¥ä¹¦å" << endl;
+    cout << "ÇëÊäÈëÊéÃû" << endl;
     string name;
     cin >> name;
     Book book;
     int operate;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
     }
     merchantbookstore.bookNum = 0;
     for (int i = 0; i < merbox.boxNum; i++)
@@ -128,7 +128,7 @@ bool mainBuy::buyBook()
 
     if (merchantbookstore.showBooksList())
     {
-        cout << "è¯·è¾“å…¥è¦è´­ä¹°çš„åºå·" << endl; //è¿™é‡Œçš„åºå·æ˜¯ä»Ž1å¼€å§‹æ˜¾ç¤ºçš„ï¼
+        cout << "ÇëÊäÈëÒª¹ºÂòµÄÐòºÅ" << endl; //ÕâÀïµÄÐòºÅÊÇ´Ó1¿ªÊ¼ÏÔÊ¾µÄ£¡
         cin >> operate;
         if (merchantbookstore.bookBox[operate - 1].bookName != "")
         {
@@ -144,7 +144,7 @@ bool mainBuy::buyBook()
                 merchantbookstore.username = book.username;
                 for (int i = 0; i < merchantbookstore.bookNum; i++)
                 {
-                    merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                    merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
                 }
                 merchantbookstore.bookNum = 0;
                 merchantbookstore.readFile();
@@ -153,7 +153,7 @@ bool mainBuy::buyBook()
 
                 for (int i = 0; i < mybookstore.bookNum; i++)
                 {
-                    mybookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+                    mybookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
                 }
                 mybookstore.username = self.username;
                 mybookstore.readFile();
@@ -164,27 +164,27 @@ bool mainBuy::buyBook()
             }
             else
             {
-                cout << "ä½™é¢ä¸è¶³" << endl;
+                cout << "Óà¶î²»×ã" << endl;
             }
 
             return true;
         }
         else
         {
-            cout << "ä½ è¾“å…¥çš„ä¸å­˜åœ¨ï¼" << endl;
+            cout << "ÄãÊäÈëµÄ²»´æÔÚ£¡" << endl;
             return false;
         }
     }
     else
     {
-        cout << "æ²¡æœ‰æŸ¥åˆ°ï¼" << endl;
+        cout << "Ã»ÓÐ²éµ½£¡" << endl;
         return false;
     }
 }
 
 void mainBuy::returnPage()
 {
-    cout << "æ˜¯å¦ç»§ç»­è´­ç‰©ï¼Ÿï¼ˆy/nï¼‰" << endl;
+    cout << "ÊÇ·ñ¼ÌÐø¹ºÎï£¿£¨y/n£©" << endl;
     fflush(stdin);
     char jude = getchar();
     char judge = getchar();
@@ -205,29 +205,29 @@ void mainBuy::Sence()
     {
         int operate;
         cout << 1 << ":"
-             << "è´­ä¹°" << endl;
+             << "¹ºÂò" << endl;
         cout << 2 << ":"
-             << "å±•ç¤ºç»†èŠ‚" << endl;
+             << "Õ¹Ê¾Ï¸½Ú" << endl;
         cout << 3 << ":"
-             << "åŠ å…¥è´­ç‰©è½¦" << endl;
+             << "¼ÓÈë¹ºÎï³µ" << endl;
         cout << 4 << ":"
-             << "è¿”å›žä¸Šä¸€ç•Œé¢" << endl;
+             << "·µ»ØÉÏÒ»½çÃæ" << endl;
         cin >> operate;
         switch (operate)
         {
         case 1:
             if (self.username == "")
-                cout << "è¯·å…ˆç™»é™†ï¼" << endl;
+                cout << "ÇëÏÈµÇÂ½£¡" << endl;
             else
             {
                 if (buyBook())
                 {
                     merbox.readAll();
-                    cout << "è´­ä¹°æˆåŠŸ" << endl;
+                    cout << "¹ºÂò³É¹¦" << endl;
                 }
 
                 else
-                    cout << "è´­ä¹°å¤±è´¥" << endl;
+                    cout << "¹ºÂòÊ§°Ü" << endl;
             }
             break;
         case 2:
@@ -236,21 +236,21 @@ void mainBuy::Sence()
             }
             else
             {
-                cout << "å±•ç¤ºç»†èŠ‚å¤±è´¥ï¼" << endl;
+                cout << "Õ¹Ê¾Ï¸½ÚÊ§°Ü£¡" << endl;
             }
             break;
         case 3:
             if (mybookstore.username == "")
-                cout << "è¯·å…ˆç™»é™†ï¼" << endl;
+                cout << "ÇëÏÈµÇÂ½£¡" << endl;
             else
             {
                 if (addMystore())
                 {
-                    cout << "æ·»åŠ æˆåŠŸ" << endl;
+                    cout << "Ìí¼Ó³É¹¦" << endl;
                 }
                 else
                 {
-                    cout << "æ·»åŠ å¤±è´¥" << endl;
+                    cout << "Ìí¼ÓÊ§°Ü" << endl;
                 }
             }
             break;
@@ -260,6 +260,6 @@ void mainBuy::Sence()
     }
     else
     {
-        cout << "å–å®¶æ²¡æœ‰ä¹¦æœ¬ä¸Šæž¶" << endl;
+        cout << "Âô¼ÒÃ»ÓÐÊé±¾ÉÏ¼Ü" << endl;
     }
 }

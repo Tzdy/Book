@@ -12,14 +12,12 @@ public:
                 this->price = price;
                 this->details = details;
         }
+		bool operator == (Book book);
         string bookName;    //书名
         double price;    //价格
         string details;
         string username; // 属于那个卖家书库。
-        Book getBook(){
-                return *this;
-        }
-        bool operator==(Book book);
+        
 };
 
 #endif

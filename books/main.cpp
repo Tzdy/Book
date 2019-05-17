@@ -1,29 +1,29 @@
 #include<iostream>
 #include<string>
-//è´­ç‰©è½¦ï¼š
+//¹ºÎï³µ£º
 #include"MyBookStore.h"
 #include"mainMyBookStore.h"
-//å–å®¶ä¹°å®¶è´¦æˆ·ï¼š
+//Âô¼ÒÂò¼ÒÕË»§£º
 #include"MerchantAccount.h"
 #include"MyAccount.h"
-//ä¹¦ï¼š
+//Êé£º
 #include "Book.h"
-//å–å®¶ä¹¦åº“
+//Âô¼ÒÊé¿â
 #include"MerchantBookStore.h"
-//è´­ä¹°ç•Œé¢
+//¹ºÂò½çÃæ
 #include"mainBuy.h" 
-//ç™»é™†ç•Œé¢
+//µÇÂ½½çÃæ
 #include"mainLogin.h"
 #include"MyLogin.h"
-//ä¸»ç•Œé¢
+//Ö÷½çÃæ
 #include "mainSence.h"
-//åå°ç•Œé¢
+//ºóÌ¨½çÃæ
 #include"mainMerchant.h"
-//å–å®¶è´¦å·
+//Âô¼ÒÕËºÅ
 #include"MerchantLogin.h"
-//ä»“åº“é›†åˆ
+//²Ö¿â¼¯ºÏ
 #include"MerBox.h"
-//å–å®¶è´¦æˆ·ç•Œé¢
+//Âô¼ÒÕË»§½çÃæ
 #include"mainMerchantAccount.h"
 MyBookStore mybookstore;
 MerchantBookStore merchantbookstore;

@@ -7,7 +7,7 @@ void mainSence::init()
     
     merbox.readAll();
     // merchantbookstore.username = Merlogin.user[0].username;
-    // merchantbookstore.readFile();  //éœ€è¦ä¿®ï¼Œæ”¹ï¼›
+    // merchantbookstore.readFile();  //ĞèÒªĞŞ£¬¸Ä£»
 }
 
 void mainSence::run()
@@ -20,7 +20,7 @@ void mainSence::run()
         cout << "2:store" << endl;
         cout << "3:login" << endl;
         cout << "4:charge" << endl;
-        cout << "5:åå°" << endl;
+        cout << "5:ºóÌ¨" << endl;
         cin >> operate;
         switch (operate)
         {

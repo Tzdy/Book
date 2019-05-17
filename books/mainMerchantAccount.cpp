@@ -2,12 +2,12 @@
 
 void mainMerchantAccount::test(){
     merchant.readFile();
-    cout << "æ‚¨å½“å‰çš„ä½™é¢ä¸ºï¼š" << merchant.money << endl; 
+    cout << "Äúµ±Ç°µÄÓà¶îÎª£º" << merchant.money << endl; 
 }
 
 void mainMerchantAccount::sence(){
     if(merchant.username == "")
-        cout << "è¯·ç™»é™†ï¼" << endl;
+        cout << "ÇëµÇÂ½£¡" << endl;
     else
     {
         test();

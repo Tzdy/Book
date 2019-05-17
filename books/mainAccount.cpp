@@ -15,17 +15,17 @@ bool mainAccount::charge(double x){
 
 void mainAccount::sence(){
     if(self.username == "")
-        cout << "è¯·ç™»é™†ï¼" << endl;
+        cout << "ÇëµÇÂ½£¡" << endl;
     else
     {
-        cout << "è¯·è¾“å…¥ä½ æƒ³å……å€¼çš„é‡‘é¢ã€‚" << endl;
+        cout << "ÇëÊäÈëÄãÏë³äÖµµÄ½ð¶î¡£" << endl;
         double money;
         cin >> money;
         if(charge(money))
-            cout << "å……å€¼æˆåŠŸï¼" << endl;
+            cout << "³äÖµ³É¹¦£¡" << endl;
         else
         {
-            cout << "å……å€¼å¤±è´¥ï¼" << endl;
+            cout << "³äÖµÊ§°Ü£¡" << endl;
         }
         returnPage();
     }
@@ -33,7 +33,7 @@ void mainAccount::sence(){
 }
 
 void mainAccount::returnPage(){
-    cout << "æ˜¯å¦ç»§ç»­å……å€¼ï¼Ÿï¼ˆy/nï¼‰" << endl;
+    cout << "ÊÇ·ñ¼ÌÐø³äÖµ£¿£¨y/n£©" << endl;
     fflush(stdin);
     char jude = getchar();
     char judge = getchar();

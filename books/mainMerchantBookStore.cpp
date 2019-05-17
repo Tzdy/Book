@@ -5,27 +5,27 @@ void mainMerchantBookStore::delBook()
     Book book;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
     }
     merchantbookstore = merbox.searchBox(merchant.username);
     merchantbookstore.username = merchant.username;
     merchantbookstore.readFile();
-    cout << "è¯·è¾“å…¥ä½ è¦åˆ é™¤çš„ä¹¦å" << endl;
+    cout << "ÇëÊäÈëÄãÒªÉ¾³ýµÄÊéÃû" << endl;
     string name;
     cin >> name;
     if (merchantbookstore.delBook(merchantbookstore.searchBook(name)) && merchantbookstore.writeFile())
     {
-        cout << "åˆ é™¤æˆåŠŸ" << endl;
+        cout << "É¾³ý³É¹¦" << endl;
         merbox.readAll();
     }
     else
     {
-        cout << "ä½ è¾“å…¥çš„ä¸å­˜åœ¨" << endl;
+        cout << "ÄãÊäÈëµÄ²»´æÔÚ" << endl;
     }
 }
 void mainMerchantBookStore::returnPage()
 {
-    cout << "æ˜¯å¦ç»§ç»­æ·»åŠ å›¾ä¹¦ï¼ˆy/nï¼‰" << endl;
+    cout << "ÊÇ·ñ¼ÌÐøÌí¼ÓÍ¼Êé£¨y/n£©" << endl;
     fflush(stdin);
     char judge = getchar();
     char jude = getchar();
@@ -40,7 +40,7 @@ void mainMerchantBookStore::showBooklist()
     Book book;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book}; //Çå³ý»º´æ£¡
     }
     merchantbookstore = merbox.searchBox(merchant.username);
     merchantbookstore.username = merchant.username;
@@ -51,7 +51,7 @@ void mainMerchantBookStore::showBooklist()
     }
     else
     {
-        cout << "è¯·æ·»åŠ ä¹¦ï¼" << endl;
+        cout << "ÇëÌí¼ÓÊé£¡" << endl;
     }
 }
 
@@ -60,7 +60,7 @@ void mainMerchantBookStore::addBook()
     Book book_;
     for (int i = 0; i < merchantbookstore.bookNum; i++)
     {
-        merchantbookstore.bookBox[i] = {book_}; //æ¸…é™¤ç¼“å­˜ï¼
+        merchantbookstore.bookBox[i] = {book_}; //Çå³ý»º´æ£¡
     }
     merchantbookstore = merbox.searchBox(merchant.username);
     merchantbookstore.username = merchant.username;
@@ -68,11 +68,11 @@ void mainMerchantBookStore::addBook()
     string name;
     double price;
     string details;
-    cout << "è¯·è¾“å…¥ä¹¦å" << endl;
+    cout << "ÇëÊäÈëÊéÃû" << endl;
     cin >> name;
-    cout << "è¯·è¾“å…¥ä»·æ ¼" << endl;
+    cout << "ÇëÊäÈë¼Û¸ñ" << endl;
     cin >> price;
-    cout << "ç»†èŠ‚" << endl;
+    cout << "Ï¸½Ú" << endl;
     cin >> details;
     Book book(name, price, details);
     book.username = merchantbookstore.username;
@@ -80,21 +80,21 @@ void mainMerchantBookStore::addBook()
     {
         merchantbookstore.writeFile();
         merbox.readAll();
-        cout << "æ·»åŠ æˆåŠŸ" << endl;
+        cout << "Ìí¼Ó³É¹¦" << endl;
     }
 
     else
-        cout << "æ·»åŠ å¤±è´¥" << endl;
+        cout << "Ìí¼ÓÊ§°Ü" << endl;
 }
 
 void mainMerchantBookStore::sence()
 {
     cout << 1 << ":"
-         << "æ·»åŠ å›¾ä¹¦" << endl;
+         << "Ìí¼ÓÍ¼Êé" << endl;
     cout << 2 << ":"
-         << "åˆ é™¤å›¾ä¹¦" << endl;
+         << "É¾³ýÍ¼Êé" << endl;
     cout << 3 << ":"
-         << "åˆ—å‡ºæ‰€æœ‰å›¾ä¹¦" << endl;
+         << "ÁÐ³öËùÓÐÍ¼Êé" << endl;
     int operate;
     cin >> operate;
     switch (operate)
