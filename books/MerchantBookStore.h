@@ -1,17 +1,21 @@
-#include"Book.h"
-#include"MyBookStore.h"
 #ifndef _MERCHANTBOOKSTORE_H_
 #define _MERCHANTBOOKSTORE_H_
-class MerchantBookStore :public MyBookStore 
+#include"Book.h"
+#include"BookStore.h"
+// #include"MerBox.h"
+// extern MerBox merbox;
+
+class MerchantBookStore :public BookStore 
 {
 private:
         /* data */
 public:
-        Book bookBox[50];
-        int bookNum = 0;
-        bool delBook(Book book);
-        bool showBooksList();
-        Book searchBook(string name);
+        // Book bookBox[50];
+        // int bookNum = 0;
+        bool writeFile();
+        bool readFile();
+        bool operator==(MerchantBookStore store);
+        
 };
 
 

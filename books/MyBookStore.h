@@ -8,8 +8,9 @@ using namespace std;
 class  MyBookStore : public BookStore
 {
 public:
-  int bookNum = 0;
-  Book bookBox[50];
-  bool pushBook(Book book);
+  // int bookNum = 0;
+  // Book bookBox[50];
+  bool writeFile();
+  bool readFile();
 };
 #endif

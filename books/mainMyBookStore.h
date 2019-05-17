@@ -3,16 +3,22 @@
 #include<iostream>
 #include<string>
 #include"MyBookStore.h"
-#include"Account.h"
-extern Account self,merchant;
+#include"MerchantBookStore.h"
+#include"MerchantAccount.h"
+#include"MyAccount.h"
+#include"MerBox.h"
+extern MyAccount self;
+extern MerchantAccount merchant;
 extern MyBookStore mybookstore;
-
+extern MerchantBookStore merchantbookstore;
+extern MerBox merbox;
 class mainMyBookStore
 {
 public:
         void showBooklist();
         void delBook();
         void buyBook();
+        void returnPage();
 };
 
 
