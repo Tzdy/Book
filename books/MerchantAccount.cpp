@@ -2,7 +2,7 @@
 
 bool MerchantAccount::writeFile(){
         fstream file;
-        file.open(username + "Mer.txt",ios::out);
+        file.open(username + "MerAccount.txt",ios::out);
         if(file.write((char*) &money,sizeof(money))){
                 file.close();
                 return true;
@@ -18,7 +18,7 @@ bool MerchantAccount::writeFile(){
 
 bool MerchantAccount::readFile(){
         fstream file;
-        file.open(username + "Mer.txt",ios::in);
+        file.open(username + "MerAccount.txt",ios::in);
         if(file.read((char*) &money,sizeof(money))){
                 file.close();
                 return true;

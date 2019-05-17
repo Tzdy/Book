@@ -18,7 +18,7 @@ bool MyAccount::writeFile(){
 
 bool MyAccount::readFile(){
         fstream file;
-        file.open(username + "myAcount.txt",ios::in);
+        file.open(username + "myAccount.txt",ios::in);
         if(file.read((char*) &money,sizeof(money))){
                 file.close();
                 return true;

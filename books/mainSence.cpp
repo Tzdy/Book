@@ -34,7 +34,7 @@ void mainSence::run()
             mainlogin.sence();
             break; 
         case 4:
-            mainaccount.sence();  
+            mainmyaccount.sence();  
             break;     
         case 5:
             mainmerchant.run();

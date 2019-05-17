@@ -23,6 +23,8 @@
 #include"MerchantLogin.h"
 //仓库集合
 #include"MerBox.h"
+//卖家账户界面
+#include"mainMerchantAccount.h"
 MyBookStore mybookstore;
 MerchantBookStore merchantbookstore;
 MyAccount self;
@@ -35,10 +37,11 @@ mainMerchant mainmerchant;
 MerchantLogin Merlogin;
 mainMerchantLogin mainlog;
 mainMerchantBookStore mainMerbookstore;
-mainAccount mainaccount;
+mainMyAccount mainmyaccount;
 MerBox merbox;
+mainMerchantAccount mainmerchantaccount;
 int main(){
         mainSence main;
         main.run();
 }
-//g++ MerBox.cpp MerchantLogin.cpp mainAccount.cpp mainMerchantLogin.cpp  mainMerchant.cpp mainMerchantBookStore.cpp mainSence.cpp MyAccount.cpp MerchantAccount.cpp Login.cpp mainLogin.cpp MyLogin.cpp User.cpp  Account.cpp Book.cpp BookStore.cpp main.cpp mainMyBookStore.cpp MerchantBookStore.cpp MyBookStore.cpp mainBuy.cpp -o main -std=c++11
+//g++ mainMerchantAccount.cpp MerBox.cpp MerchantLogin.cpp mainMyAccount.cpp mainMerchantLogin.cpp  mainMerchant.cpp mainMerchantBookStore.cpp mainSence.cpp MyAccount.cpp MerchantAccount.cpp Login.cpp mainLogin.cpp MyLogin.cpp User.cpp  Account.cpp Book.cpp BookStore.cpp main.cpp mainMyBookStore.cpp MerchantBookStore.cpp MyBookStore.cpp mainBuy.cpp -o main -std=c++11

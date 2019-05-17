@@ -10,7 +10,7 @@
 #include"mainBuy.h"
 #include"mainLogin.h"
 #include"mainMyBookStore.h"
-#include"mainAccount.h"
+#include"mainMyAccount.h"
 #include"mainMerchant.h"
 #include"MerchantLogin.h"
 using namespace std;
@@ -24,7 +24,7 @@ extern MyAccount self;
 extern MerchantAccount merchant;
 extern mainMerchant mainmerchant;
 extern MerchantLogin Merlogin;
-extern mainAccount mainaccount;
+extern mainMyAccount mainmyaccount;
 class mainSence{
     public:
         void init();

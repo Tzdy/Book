@@ -6,6 +6,8 @@ void mainMerchant::run()
          << "登陆" << endl;
     cout << 2 << ":"
          << "书库" << endl;
+    cout << 3 << ":"
+         << "余额" << endl;
     int operate;
     cin >> operate;
     switch (operate)
@@ -27,6 +29,9 @@ void mainMerchant::run()
             merchantbookstore.readFile();
             mainMerbookstore.sence();
         }
+        break;
+    case 3:
+        mainmerchantaccount.sence();
         break;
     default:
         break;
