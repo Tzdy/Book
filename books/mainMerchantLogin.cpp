@@ -42,6 +42,7 @@ void mainMerchantLogin::sence(){
     cout << 3 << ":" << "返回上一页" << endl;
     int operate;
     cin >> operate;
+	system("cls");
     switch (operate)
     {
     case 1:
@@ -64,6 +65,7 @@ void mainMerchantLogin::sence(){
 void mainMerchantLogin::returnPage(){
     cout << "是否继续留在概界面？（y/n）" << endl;
         fflush(stdin);
+		getchar();
         char judge = getchar();
         if (judge == 'y')
                 sence();

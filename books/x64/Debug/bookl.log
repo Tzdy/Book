@@ -1,0 +1,13 @@
+﻿  main.cpp
+c:\users\57121\desktop\books\book-master\books\book.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mainLogin.cpp
+c:\users\57121\desktop\books\book-master\books\book.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mainMerchant.cpp
+c:\users\57121\desktop\books\book-master\books\book.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mainMyAccount.cpp
+  mainMyBookStore.cpp
+c:\users\57121\desktop\books\book-master\books\book.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  mainSence.cpp
+c:\users\57121\desktop\books\book-master\books\book.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  bookl.vcxproj -> C:\Users\57121\Desktop\books\Book-master\books\x64\Debug\bookl.exe

@@ -17,7 +17,7 @@ bool mainMyAccount::charge(double x)
 
 void mainMyAccount::sence()
 {
-    if (self.username == "")
+    if (mylogin.username == "")
         cout << "ÇëµÇÂ½£¡" << endl;
     else
     {
@@ -27,6 +27,7 @@ void mainMyAccount::sence()
              << "Óà¶î" << endl;
         int operate;
         cin >> operate;
+		system("cls");
         switch (operate)
         {
         case 1:

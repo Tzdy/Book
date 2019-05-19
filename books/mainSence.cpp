@@ -16,12 +16,13 @@ void mainSence::run()
     while (1)
     {
         int operate;
-        cout << "1:main" << endl;
-        cout << "2:store" << endl;
-        cout << "3:login" << endl;
-        cout << "4:charge" << endl;
-        cout << "5:后台" << endl;
+        cout << "1:商品列表" << endl;
+        cout << "2:购物车" << endl;
+        cout << "3:登陆" << endl;
+        cout << "4:充值" << endl;
+        cout << "5:商家管理" << endl;
         cin >> operate;
+		system("cls");
         switch (operate)
         {
         case 1:

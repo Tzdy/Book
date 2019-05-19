@@ -35,6 +35,7 @@ void mainLogin::sence(){
     cout << 3 << ":" << "返回上一页" << endl;
     int operate;
     cin >> operate;
+	system("cls");
     switch (operate)
     {
     case 1:
@@ -55,8 +56,9 @@ void mainLogin::sence(){
 }
 
 void mainLogin::returnPage(){
-    cout << "是否继续留在概界面？（y/n）" << endl;
+    cout << "是否继续留在该界面？（y/n）" << endl;
         fflush(stdin);
+		char jude = getchar();
         char judge = getchar();
         if (judge == 'y')
                 sence();

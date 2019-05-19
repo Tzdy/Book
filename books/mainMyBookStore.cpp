@@ -6,7 +6,7 @@ using namespace std;
 
 void mainMyBookStore::showBooklist()
 {
-        if (self.username == "")
+        if (mylogin.username == "")
                 cout << "ÇëÏÈµÇÂ½£¡" << endl;
         else
         {
@@ -33,6 +33,7 @@ void mainMyBookStore::showBooklist()
                 cout << "2:"
                      << "ÏÂµ¥" << endl;
                 cin >> operate;
+				system("cls");
                 switch (operate)
                 {
                 case 1:

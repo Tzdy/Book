@@ -213,6 +213,7 @@ void mainBuy::Sence()
         cout << 4 << ":"
              << "返回上一界面" << endl;
         cin >> operate;
+		system("cls");
         switch (operate)
         {
         case 1:

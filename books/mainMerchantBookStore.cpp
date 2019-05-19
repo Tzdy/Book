@@ -97,6 +97,7 @@ void mainMerchantBookStore::sence()
          << "列出所有图书" << endl;
     int operate;
     cin >> operate;
+	system("cls");
     switch (operate)
     {
     case 1:

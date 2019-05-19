@@ -104,7 +104,6 @@
     <ClCompile Include="BookStore.cpp" />
     <ClCompile Include="Login.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="mainAccount.cpp" />
     <ClCompile Include="mainBuy.cpp" />
     <ClCompile Include="mainLogin.cpp" />
     <ClCompile Include="mainMerchant.cpp" />
@@ -129,7 +128,6 @@
     <ClInclude Include="BookStore.h" />
     <ClInclude Include="BookStoreBox.h" />
     <ClInclude Include="Login.h" />
-    <ClInclude Include="mainAccount.h" />
     <ClInclude Include="mainBuy.h" />
     <ClInclude Include="mainLogin.h" />
     <ClInclude Include="mainMerchant.h" />

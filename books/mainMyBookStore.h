@@ -7,11 +7,13 @@
 #include"MerchantAccount.h"
 #include"MyAccount.h"
 #include"MerBox.h"
+#include"MyLogin.h"
 extern MyAccount self;
 extern MerchantAccount merchant;
 extern MyBookStore mybookstore;
 extern MerchantBookStore merchantbookstore;
 extern MerBox merbox;
+extern MyLogin mylogin;
 class mainMyBookStore
 {
 public:
